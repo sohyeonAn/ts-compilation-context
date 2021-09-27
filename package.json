@@ -1,0 +1,19 @@
+{
+  "name": "compilation-context",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^17.0.24",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "react": "^17.0.2"
+  }
+}
