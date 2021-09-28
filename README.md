@@ -39,4 +39,19 @@
 - typeRoots와 types는 같이 사용하지 않는다.
 
 
+## target
+- 빌드의 결과물을 어떤 버전으로 할 것인지 결정한다.
+- default: ES3
+
+## lib
+- 기본 type definition 라이브러리를 어떤 것을 사용할 것인지 결정한다.
+- lib를 지정하지 않았을 때, target이
+  - ES3 이면, lib.d.ts
+  - ES5 이면, dom, es5, scripthost
+  - ES6 이면, dom, es6, dom.iterable, scripthost
+- lib를 지정하면 그 lib 배열로만 라이브러리를 사용한다.
+  - 빈 배열([])이면 'no definition found ........' 에러가 뜰 것 이다.
+  
+
+
 
