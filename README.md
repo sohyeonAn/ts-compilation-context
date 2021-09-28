@@ -61,5 +61,19 @@
     - 지정한 폴더에 존재하지 않는 ts파일이 있을 시 에러.
 
 
+## strict
+- 무조건 true로 설정하는게 기본.
+- 왜? 엄격하게 타입을 체킹하게 한다.
+
+옵션 | 설명
+--|--
+--noImplicitAny | any타입이라고 명시하지 않았을 때, any로 추론되면 직접 any로 지정해야 한다.
+--noImplicitThis | this에 어떤 형태가 들어올 수 있는지 제한한다. (any로 지정하는 것이 합리적이다.)
+--strictNullChecks | 모든 타입에 null이나 undefined가 들어가지 않게 제한한다. (예외적으로, void는 undefined를 가질 수 있다.)
+--strictFunctionTypes | 함수 타임에 대한 bivariant 매개변수 검사를 비활성한다.(...?)
+--strictPropertyInitialization | 클래스의 속성이 생성자에서 초기화 되었는지 확인한다.
+--stictBindCallApply | bind, call, apply를 사용할 때 엄격하게 체크하도록 한다.(...?)
+--alwaysStrict | js를 strict mode로 분석하고 컴파일된 js파일에 "use strict"를 추가한다.
+
 
 
