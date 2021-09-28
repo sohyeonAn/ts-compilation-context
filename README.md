@@ -43,6 +43,7 @@
 - 빌드의 결과물을 어떤 버전으로 할 것인지 결정한다.
 - default: ES3
 
+
 ## lib
 - 기본 type definition 라이브러리를 어떤 것을 사용할 것인지 결정한다.
 - lib를 지정하지 않았을 때, target이
@@ -51,7 +52,14 @@
   - ES6 이면, dom, es6, dom.iterable, scripthost
 - lib를 지정하면 그 lib 배열로만 라이브러리를 사용한다.
   - 빈 배열([])이면 'no definition found ........' 에러가 뜰 것 이다.
-  
+
+
+  ## outDir, outFile, rootDir
+  - outFile: 모든 ts파일의 컴파일 결과를 여기에 지정한 하나의 파일로 생성한다.
+  - outDir: 컴파일된 **js파일**이 저장될 경로가 된다.
+  - rootDir: **ts파일**이 존재할 폴더를 지정한다.
+    - 지정한 폴더에 존재하지 않는 ts파일이 있을 시 에러.
+
 
 
 
